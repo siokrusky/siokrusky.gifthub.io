@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(imagenes/fndins.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back{
+    display: none;
+}
+ 
+.registro{
+    width: 70%;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 8px 55px 5px rgba(252,252,252,1);
+    -webkit-box-shadow: -4px 8px 55px 5px rgba(252,252,252,1);
+    -moz-box-shadow: -4px 8px 55px 5px rgba(252,252,252,1);
+}
+
+.registro h1{
+    font-size: 22px;
+    
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.registro a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.registro a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.registro button{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 16px;
+    height: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 15vh;
+    height: 15vh;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: -4px 8px 55px -16px rgba(255,255,255,1);
+-webkit-box-shadow: -4px 8px 55px -16px rgba(255,255,255,1);
+-moz-box-shadow: -4px 8px 55px -16px rgba(255,255,255,1);
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 5vh;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1vh;
+    color: white;
+
+}
+
+.titulo p{
+    font-size: 2vh;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1vh;
+    color: white;
+}
+input[type="radio"]{
+    display: none;
+}
+.cont1{
+    
+    color: white;
+    font-size: 30px;
+    border: 2px solid #01cc65;
+    border-radius: 5px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.cont::before{
+    content: "";
+    height: 30px;
+    width: 30px;
+    border: 3px solid #01cc65;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+input[type="radio"]:checked + label{
+    background-color: #01cc65;
+    color: white;
+}
+input[type="radio"]:checked + label:before{
+    height: 16px;
+    width: 16px;
+    border: 10px;
+    border: 10px solid white;
+    background-color: #01cc65;
+}
+.atras{
+    display: block;
+    padding: 10px;
+}
+
+.atras .fa-solid {
+    font-size: 28px;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    background-color: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+    padding-top: 15px;
+}
+
+.fa-solid fa-backward:HOVER{
+    transform: scale(1.2);
+}
+
+.fa-brands{
+    padding-right: 20px;
+}
+h4{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px){
+    
+    .registro{
+        width: 100%;
+        margin: 0px;
+    }
+    .back{
+        display: block;
+        width: 40px;
+        background: transparent;
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: aliceblue;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #dfe6dd, 0 0 30px #e1e9df, 0 0 40px #dae4d8, 0 0 55px #e2e9e0, 0 0 75px #ebf0ea, -40px -40px 0px rgba(255,250,253,0);
+    }
+
+    img{
+        display: none;
+    }
+    .atras{
+        display: none;
+    }
+    .titulo h1{
+        letter-spacing: normal;
+    }
+    .controls{
+        border-radius: 16px;
+        background-color: #f1f1f1;
+        border: none;
+    }
+    .registro div p{
+        letter-spacing: normal;
+    }
+}
